@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "holmes",
+  "info": {
+    "name": "Holmes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "email": {
+      "type": "email"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "country": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "Rol": {
+      "type": "string"
+    },
+    "Whatsapp": {
+      "type": "biginteger"
+    },
+    "Nombre": {
+      "type": "string"
+    },
+    "Apellido": {
+      "type": "string"
+    }
+  }
+}

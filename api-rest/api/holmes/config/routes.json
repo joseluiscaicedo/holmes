@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/holmes",
+      "handler": "holmes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/holmes/count",
+      "handler": "holmes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/holmes/:id",
+      "handler": "holmes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/holmes",
+      "handler": "holmes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/holmes/:id",
+      "handler": "holmes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/holmes/:id",
+      "handler": "holmes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
